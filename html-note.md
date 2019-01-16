@@ -35,4 +35,28 @@ html基本概念，基本术语的介绍，元素的结构，页面的结构
 
 * title元素是用来设置你的页面的标题的，这个标题是显示在浏览器页面标签上的
 
-* body元素是包含所有的内容，这些内容是你想展示给用户的内容的， 
+* body元素是包含所有的内容，这些内容是你想展示给用户的内容的。
+
+* white space 空格，在元素内容中添加多个空格时，在浏览器渲染页面的时候只会渲染一个空格。
+
+* 特殊符号的引用，```< >, ' '' & ```这些符号都是特殊符号，需要转义表示，以及一些特殊符号。```< &lt >&gt```
+
+
+## HTML介绍
+[html介绍](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML)
+
+---
+> 当页面在浏览器中加载的时候，html文档的头部是不会在页面上展示的。head元素就是html的头部，它的职责就是描述该html文档的的元信息metadata
+
+### head 元素的主要内容
+
+* ```<title>```元素，title元素表示的是整个html文档的标题，而不是局限于页面展示的内容中的h1标题内容
+
+* meta元素，metadata是描述数据的数据，是元数据。html有一个官方的方式来给文档添加元数据，通过meta元素,这些元素是放置到head元素中的。
+
+* 指定html的编码 ``` <meta charset="utf-8"> ```
+
+* 添加html作者和描述 ``` <meta name="author"  content="chris mills"> ```
+
+* ``` <meta name="description" content="sdfadfadsfadfcxfadfzcxfaijfoqerfqpoiwejr">  ```
+
