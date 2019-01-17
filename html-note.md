@@ -60,11 +60,11 @@ html基本概念，基本术语的介绍，元素的结构，页面的结构
 
 * ``` <meta name="description" content="sdfadfadsfadfcxfadfzcxfaijfoqerfqpoiwejr">  ```
 
-* head 元素中添加网站icon图标， ``` <link ref="icon" href="favicon.icon" > ```
+* head 元素中添加网站icon图标， ``` <link ref="icon" href="favicon.icon" > ```
 
 * 引入外部的css文件
 
-* 引入外部的script文件，其实并不建议在head中引入script文件，一般的做法是在body的最后面引入script，这样可以保证在执行脚本的时候，页面元素都是已经加载好的。
+* 引入外部的script文件，其实并不建议在head中引入script文件，一般的做法是在body的最后面引入script，这样可以保证在执行脚本的时候，页面元素都是已经加载好的。
 
 * 在html跟元素中设置属性lang 来比较基本的语言，这对搜索引擎是友好的。
 
