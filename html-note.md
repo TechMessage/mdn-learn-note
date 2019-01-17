@@ -69,4 +69,26 @@ html基本概念，基本术语的介绍，元素的结构，页面的结构
 * 在html跟元素中设置属性lang 来比较基本的语言，这对搜索引擎是友好的。
 
 
+## HTML text fundamentas
+[htmlm 文本结构](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals)
+
+---
+> html的其中一大职责就是提供文本接口和语义化，这样浏览器可以正确的显示
+
+* 大多数的结构化的文本都包含标题和段落，例如新闻，杂志...
+
+* h1元素作为页面的顶级标题，一般只会出现一次, h2一般是某个段落的标题，h3作为h2的子标题，层级顺序不能问题
+
+* 为何需要结构化文本？
+   * 用户需要通过标题快速定位感兴趣的内容 标题 + 内容
+   * 搜索引擎会根据标题元素来建立网页索引 标题
+   * 屏幕阅读器的友好 标题
+   * css以及js的应用丰富视觉和交互，需要元素包裹内容
+
+* 为何需要语义化？ why we need semantics?
+   * 
+
+
+
+
 
