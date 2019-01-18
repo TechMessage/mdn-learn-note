@@ -144,6 +144,6 @@ html基本概念，基本术语的介绍，元素的结构，页面的结构
 ### what is svg? 什么是svg
 > svg 是基于xml定义的矢量图，它也是标记语言和html类似
 
-* 响应式图片 responsive images 
+* 响应式图片 responsive images
 
 
