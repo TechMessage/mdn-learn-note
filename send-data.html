@@ -1,12 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
-    
+
+    <button type="button" onclick="sendData({test: 'ok'})">
+        click me
+    </button>
+
+    <!-- script -->
+    <script>
+
+        function sendData(data) {
+
+            var xhr = new XMLHttpRequest()
+            var urlEncodedData = ''
+            var urlEncodedDataPairs = []
+            var name
+
+            for (name in data) {
+                urlEncodedDataPairs.push(encodeURIComponent(name) + '=' + encodeURIComponent(data[name]))
+            }
+
+            // 空格在表单
+            urlEncodedData = urlEncodedDataPairs.join('&').replace(/%20/g, '+') //空格在url中编码 替换为加号
+
+            //success callback
+            xhr.addEventListener('load', function (e) {
+                alert(' data send and response loaded')
+            })
+
+            // error  callback
+            xhr.addEventListener('error', function (e) {
+                
+                alert(' something is wrong')
+                console.log(e);
+            })
+
+            // 设置http请求
+            xhr.open('post', 'http://127.0.0.1')
+
+            // 设置请求头
+            xhr.setRequestHeader('content-type', 'application/x-www-form-urlencoded')
+
+            // 最后，发送请求
+            xhr.send(urlEncodedData);
+
+        }
+
+    </script>
 </body>
+
 </html>
