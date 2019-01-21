@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            box-sizing: border-box;
+            border: 1px solid #000;
+            flex-wrap: wrap;
+        }
+
+        li {
+            width: 25%;
+            height: 90px;
+            border: 1px solid #e92323;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+
+</html>
+
+<script>
+
+    let lis = document.querySelectorAll('li');
+
+    function random(num) {
+        return Math.floor(Math.random() * (num + 1));
+    }
+
+    function changeColor(e) {
+        e.target.style.backgroundColor = `rgb(${random(255)},${random(255)}, ${random(255)})`
+    }
+
+    lis.forEach((v, i) => {
+        v.addEventListener('click', changeColor);
+    })
+
+
+
+</script>
