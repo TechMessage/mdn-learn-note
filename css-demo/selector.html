@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #ddd;
+        }
+        p {
+            color: red;
+            
+        }
+        
+        div {
+            color: blue
+        }
+
+        h1 {
+            color: red;
+            text-shadow: 1px 1px 1px black ;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0.1));
+            
+        }
+
+        input {
+            text-transform: uppercase; /*仅仅是显示效果，后台数据还是没有大写的*/
+        }
+        [data-vegetable] {
+            color: green;
+        }
+        [data-quantity*='3kg'] {
+            color: red;
+        }
+        [data-quantity^='3'] {
+            background-color: #dda520;
+        }
+        [data-quantity$='kg'] {
+            text-decoration: underline;
+        }
+
+        a {
+            color: blue;
+        }
+        a:visited {
+            color: blue
+        }
+        a:hover,
+        a:active,
+        a:link {
+            color: darkred;
+            text-decoration: none;
+        }
+        #ap {
+            color: #dda520;
+        }
+    </style>
+</head>
+<body>
+    <p>what color do you like</p>
+    <div>I like blue</div>
+    <p>I perfer black</p>
+    <h1> hello world</h1>
+
+    <input type="text" oninput="console.log(this.value)">
+
+    <!-- 属性选择器 -->
+    <ul>
+        <li data-quantity="1kg" data-vegetable>蔬菜</li>
+        <li data-quantity="1kg" data-vegetable>蔬菜2</li>
+        <li data-quantity="1kg" data-vegetable>蔬菜3</li>
+        <li data-quantity="3kg">001</li>
+        <li data-quantity="3kg">002</li>
+        <li data-quantity="3kg">003</li>
+    </ul>
+    <p id="ap">biaoti </p>
+    <!-- 伪类选择器 -->
+    <a href="http://www.baidu.com" target="_blank">百度一下</a>
+</body>
+</html>
